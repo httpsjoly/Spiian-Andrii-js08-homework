@@ -1,34 +1,29 @@
-console.log('firstExercise start----------------------');
-let firstExercise = [];
+document.write("First exercise")
+let firstResult = [];
+let secondResult = [];
 for (let i = 10; i <= 20; i++) {
-  firstExercise.push(i);
+  firstResult.push(i);
+  secondResult.push(i * i);
 }
-console.log(firstExercise.join(','));
+document.write(firstResult.join(','));
 
-console.log('firstExercise end----------------------');
 
-console.log('secondExercise start----------------------');
-
+document.write("Second exercise")
 for(let i = 10; i < 21; i++) {
-  console.log("КВАДРАТ " + i + " = " + i * i);
+  document.write("КВАДРАТ " + i + " = " + i * i);
 }
 
-console.log('secondExercise end----------------------');
-
-console.log('thirdExercise start----------------------');
-
+document.write("Trird exercise")
 let thirdExercise = '';
   for(let i = 1; i <= 7; i++) {
     for(let j = 1; j <= 7; j++) {
       thirdExercise = (i * j) + ' ';
     }
-    console.log(thirdExercise);
+    document.write(thirdExercise);
   }
   
-  console.log('thirdExercise end----------------------');
-  
-  console.log('fourthExercise start----------------------');
-  
+
+document.write("Fourth exercise")
   function result(num) {
     let sum = 0;
     for(let i = 1; i <= num; i++){
@@ -36,27 +31,28 @@ let thirdExercise = '';
     }
     return sum;
   }
-  console.log("Сумма чисел от 1 до 15 " + " = " + result(15));
-  console.log('fourthExercise end----------------------');
+  document.write("Сумма чисел от 1 до 15 " + " = " + result(15));
 
-
-  console.log('fifthExercise start----------------------');
-  
+document.write("Fifth exercise")
   let numberFrom15to35 = 15;
   for(let i = 15; i < 35; i++) {
     numberFrom15to35 = numberFrom15to35 * i;
-    console.log("Произведение чисел" + " " + numberFrom15to35);
+    document.write("Произведение чисел" + " " + numberFrom15to35);
   }
-  console.log('fifthExercise end----------------------');
-  
-  console.log('sixthExercise start----------------------');
-  
+
+document.write("Sixth exercise")
   let fiveHundred = 500;
   let numberResult = 0;
   for (let i = 1; i <= fiveHundred; i++) {
     numberResult = numberResult + i;
   }
   numberResult = numberResult / fiveHundred;
-  
-  console.log("Среднее арифметическое " + (fiveHundred + 1) / 2);
-  console.log('sixthExercise end----------------------');
+  document.write("Среднее арифметическое " + (fiveHundred + 1) / 2);
+ 
+  document.write("Seventh exercise")
+    for (let i = 1; i <= 10; i++) {
+      for (let j = 1; j <= 10; j++) {
+        multi += (i * j) + " ";       
+      }
+      document.write(multi);
+    } 
