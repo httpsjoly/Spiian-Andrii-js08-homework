@@ -16,6 +16,7 @@ let thirdResult = [];
   }
   document.write(thirdResult.join(', '), '</br>');
 
+
 document.write("<b>Fourth exercise:</b> ");
   let fourthResult = [];
   let sum = 0;
@@ -55,12 +56,14 @@ document.write("<b>Sixth exercise:</b> ");
   }
   document.write(`${seventhResult.join(' + ')} = ${doubleNumber} </br>`);
 
+
   document.write("<b>Eighth exercise:</b> ");
   let eighthResult = [];
   for(let i = 34; i < 67; i++){
     eighthResult.push(i*3);
   }
 document.write(eighthResult.join(', ' ), '</br>');
+
 
 document.write("<b>Nineth exercise:</b> </br>");
   let ninethResult = [];
@@ -82,13 +85,27 @@ document.write("<b>Nineth exercise:</b> </br>");
   for(let k = 0; k < tenthResult.length; k++) {
     sumEvenDivisors += tenthResult[k];
   }
-
   document.write(`<b>Sum of even divisors</b> ${sumEvenDivisors} of a number ${random}. [${tenthResult.join(', ')}] </br>`)
 
 
-  document.write("<b>Twelfth exercise:</b> ")
-  let twelfeResult = [];
-  for()
+  document.write("<b>Twelfth exercise:</b> </br> ")
+  for (var j = 1; j <= 10; j++) {
+    document.write("<div style='float: left; width: 100px; margin-right: 5px; background-color: #d28cc1;'>");
+
+    for (var i = 1; i <= 10; i++) {
+    document.write('<div style="border: 1px solid black; margin: 1px;">' +i + "*" + j + "=" + (i * j) + "</div>");
+    }
+    document.write ("</div>");
+  }
+
+ 
+  // let twelfeResult = [];
+  // for(let i =1; i <= 10; i++) {
+  //   for(let j = 1; j <= 10; j++) {
+  //     twelfeResult.push(`${i} * ${j} = ${i * j}`);
+  //   }
+  // }
+  // document.write(twelfeResult.join('; '));
     
     
     
